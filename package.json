@@ -1,0 +1,10 @@
+{
+  "name": "muskan-biotechnology-portfolio",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "node dev-server.cjs",
+    "start": "node dev-server.cjs",
+    "build": "node build.cjs"
+  }
+}
