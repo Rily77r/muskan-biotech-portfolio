@@ -51,6 +51,18 @@ for (const [key, [label, href]] of Object.entries(resources)) {
   }
 }
 
+const profiles = [
+  ["LinkedIn", publicUrl(data.profiles?.linkedin)],
+  ["GitHub", publicUrl(data.profiles?.github)]
+];
+
+for (const profileNav of document.querySelectorAll(".profile-links")) {
+  for (const [label, href] of profiles) {
+    if (href) profileNav.append(link(label, href));
+  }
+  profileNav.hidden = !profileNav.childElementCount;
+}
+
 const menu = select(".menu");
 const nav = select("#nav");
 const compact = matchMedia("(max-width: 960px)");

@@ -176,3 +176,7 @@ dialog::backdrop { background: #05071380; }
 .skills-goals { color: var(--muted); line-height: 1.6; padding-left: 1.25rem; }
 .skills-goals li + li { margin-top: .35rem; }
 .project-grid:has(> :only-child) { grid-template-columns: minmax(0, 1fr); }
+
+.profile-links { display: flex; width: auto; padding: 0; gap: 16px; flex-wrap: wrap; }
+.about .profile-links { margin-top: 16px; }
+.profile-links a { color: var(--cyan); text-decoration: underline; }
